@@ -170,3 +170,9 @@ urllib3==2.6.0
     # via requests
 wadler-lindig==0.1.7
     # via jaxtyping
+
+
+
+py360convert
+Pillow 
+piexif
