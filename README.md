@@ -1,3 +1,21 @@
+# Add 360 image processing pipeline and Gaussian splat utilities
+New features:
+- Add complete 360° equirectangular image processing pipeline
+  1. generate_vectors.py: orchestrates multi-view generation from panoramas
+  2. convert360_wrapper.py: converts equirectangular to perspective with focal length in EXIF
+     - uses py360convert (https://github.com/sunset1995/py360convert)
+  3. sharp_batch.py: batch processing wrapper for SHARP model
+     - uses apple ml-sharp (https://github.com/apple/ml-sharp)
+  4. ply_transform.py: rotate/transform PLY and splat files with SH support
+     - heavily modified from Ending2015a/gsplat-convert (https://github.com/Ending2015a/gsplat-convert)
+     - sh_utils.py: adopted directly
+  5. ply_combine.py: merge multiple Gaussian splat PLY files
+
+
+
+---
+below is original readme.md from apple
+---
 # Sharp Monocular View Synthesis in Less Than a Second
 
 [![Project Page](https://img.shields.io/badge/Project-Page-green)](https://apple.github.io/ml-sharp/)
